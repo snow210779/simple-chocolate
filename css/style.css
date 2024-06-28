@@ -134,7 +134,10 @@ a {
   border: none;
 }
 
-.hero-btn-made {
+.hero-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -145,7 +148,7 @@ a {
   background-color: inherit;
 }
 
-.hero-btn-made:is(:hover, :focus) {
+.hero-link:is(:hover, :focus) {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
   background-color: #fcf1e0;
@@ -194,4 +197,46 @@ a {
   align-items: center;
   justify-content: center;
   margin-bottom: 22px;
+}
+
+/***-----INGREDIENTS-------*/
+
+.ingredients-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.ingredients-title-accent {
+  color: var(--accent-color);
+}
+
+.ingredients-text {
+  max-width: 486px;
+  margin: 0 auto;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+
+.ingredients-list {
+  display: flex;
+  gap: 19px;
+}
+
+.ingredients-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.ingredients-name {
+  font-weight: 600;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
 }
