@@ -4,7 +4,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-
   background-color: #fafafa;
   color: #111;
   font-size: 14px;
@@ -205,14 +204,21 @@ img {
 
 /***-----INGREDIENTS-------*/
 
+.ingredients {
+  margin-bottom: 100px;
+}
+
 .ingredients-title {
+  max-width: 411px;
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin: 0 auto;
+  margin-bottom: 28px;
 }
 
 .ingredients-title-accent {
@@ -226,6 +232,7 @@ img {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
 }
 
 .ingredients-list {
@@ -234,13 +241,98 @@ img {
 }
 
 .ingredients-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  background-color: #fff;
+  flex-basis: calc((100% - 3 * 19px) / 4);
+}
+
+.ingredients-item-milk {
+  background-color: var(--accent-color);
+}
+
+.ingredients-item-nuts {
+  background-color: #1e1823;
+}
+
+.ingredients-img-contant {
+  margin-bottom: 36px;
+  padding: 28px 28px 0 28px;
 }
 
 .ingredients-name {
   font-weight: 600;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  padding: 0 0 28px 28px;
+}
+
+.ingredients-name-nuts {
+  color: #fff;
+}
+
+.ingredients-overflow {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: 250ms ease;
+}
+
+.ingredients-item:hover .ingredients-overflow {
+  transform: translateY(0);
+}
+
+.ingredients-overflow-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.ingredients-overflow-contant {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.ingredients-overflow-btn {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+  background-color: #fd9222;
+  border-radius: 35px;
+  width: 81px;
+  height: 24px;
+  border: none;
+  margin-right: 6px;
+}
+
+.ingredients-overflow-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #111;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  width: 93px;
+  height: 24px;
+}
+
+.ingredients-overflow-text {
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  max-width: 230px;
 }
