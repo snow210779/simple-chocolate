@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #fafafa;
+  background-color: #fcf1e0;
   color: #111;
   font-size: 14px;
 }
@@ -342,7 +342,7 @@ img {
 
 /***-----MADE-------*/
 .made {
-  margin-bottom: 100px;
+  margin-bottom: 84px;
 }
 .made-heading {
   font-weight: 600;
@@ -379,4 +379,75 @@ img {
 .made-text {
   line-height: 1.29;
   letter-spacing: -0.02em;
+}
+
+/***-----FEEDBACK-------*/
+.feedback {
+  margin-bottom: 84px;
+}
+
+.feedback-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fd9222;
+  margin-bottom: 50px;
+}
+
+.feedback-title-accent {
+  color: #111;
+}
+.feedback-list {
+  display: flex;
+  gap: 28px;
+}
+.feedback-item {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  flex-basis: calc((100% - 2 * 28px) / 3);
+  margin-bottom: 50px;
+}
+
+.feedback-img {
+  margin: auto;
+}
+
+.feedback-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.feedback-text {
+  max-width: 312px;
+  padding: 0 24px 24px 24px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.feedback-btn {
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  width: 222px;
+  height: 50px;
+  color: #111;
+  display: block;
+  margin: 0 auto;
+  transition: color 250ms ease-out, background-color 250ms ease-out;
+}
+
+.feedback-btn:is(:hover, :focus) {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
 }
